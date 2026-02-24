@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding: 10px;
     height: 100vh;
     background: #5d8bb7;
     display: flex;
@@ -12,7 +13,8 @@ body{
     background: #e4edf5;
     padding: 30px;
     border-radius: 25px;
-    width: 350px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .display{
@@ -64,4 +66,5 @@ button:hover {
     background: #4f82b3;
     color: white;
     font-weight: bold;
+
 }
