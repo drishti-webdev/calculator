@@ -66,46 +66,5 @@ button:hover {
     background: #4f82b3;
     color: white;
     font-weight: bold;
-}
 
-@media(max-width:480px){
-
-    .calculator{
-        padding:15px;
-        border-radius:15px;
-    }
-
-    #display{
-        height:55px;
-        font-size:24px;
-    }
-
-    button{
-        height:50px;
-        font-size:18px;
-    }
-}
-
-@media(min-width:481px) and (max-width:768px){
-
-    .calculator{
-        max-width:400px;
-    }
-
-    button{
-        height:65px;
-        font-size:22px;
-    }
-
-}
-
-@media(min-width:769px){
-    .calculator{
-        max-width:420px;
-    }
-
-    button{
-        height:70px;
-        font-size:24px;
-    }
 }
