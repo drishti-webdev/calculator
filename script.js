@@ -1,48 +1,26 @@
-const result = document.getElementById("result");
-const history = document.getElementById("history");
-const buttons = document.querySelectorAll("button");
+let display = document.getElementById("display");
 
-let expression = "";
-let lastAnswer = 0;
+function appendNumber(number){
+    display.value += number;
+}
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        let value = button.innerText;
+function appendOperator(operator){
+    display.value += operator;
+}
 
-        if (value === "clear") {
-            expression = "";
-            result.value = "";
-            history.innerText = "";
-        }
-        else if (value === "del") {
-            expression = expression.slice(0, -1);
-            result.value = expression;
-        }
-        else if (value === "ENTER") {
-            try {
-                history.innerText = expression;
-                expression = eval(expression).toString();
-                result.value = expression;
-                lastAnswer = expression;
-            } catch {
-                result.value = "Error";
-            }
-        }
-        else if (value === "ans") {
-            expression += lastAnswer;
-            result.value = expression;
-        }
-        else if (value === "√") {
-            expression = Math.sqrt(eval(expression)).toString();
-            result.value = expression;
-        }
-        else if (value === "±") {
-            expression = (eval(expression) * -1).toString();
-            result.value = expression;
-        }
-        else {
-            expression += value;
-            result.value = expression;
-        }
-    });
-});
+function clearDisplay(){
+    display.value = "";
+}
+
+function deleteLast(){
+    display.value = display.value.slice(0,-1);
+}
+
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch{
+        display.value = "Error";
+    }
+}
