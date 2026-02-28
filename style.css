@@ -17,8 +17,6 @@ body{
     background: #e4edf5;
     padding:20px;
     border-radius:20px;
-    box-shadow: 0 0 25px rgba(0,150,255,0.3);
-    
     width:100%;
     max-width:350px;
 }
@@ -34,7 +32,6 @@ body{
     border-radius:12px;
     background:#061a2b;
     color:#00c6ff;
-    box-shadow: inset 0 0 10px rgba(0,198,255,0.3);
 }
 
 .buttons{
@@ -48,7 +45,6 @@ button{
     font-size:20px;
     border:none;
     border-radius:12px;
-    background: linear-gradient(145deg,#0a3d62,#0f4c75);
     color:#e6f7ff;
     cursor:pointer;
     transition:0.2s;
@@ -59,21 +55,8 @@ button:hover{
     transform: scale(1.05);
 }
 
-.operator{
-    background: linear-gradient(145deg,#0077b6,#00b4d8);
-}
-
-.operator:hover{
-    background: linear-gradient(145deg,#0096c7,#00d4ff);
-}
-
 .equal{
-    background: linear-gradient(145deg,#00b4d8,#48cae4);
-    color:black;
-}
-
-.equal:hover{
-    background: linear-gradient(145deg,#00d4ff,#90e0ef);
+    color:blue;
 }
 
 .zero{
@@ -118,3 +101,4 @@ button:hover{
         font-size:24px;
     }
 }
+
